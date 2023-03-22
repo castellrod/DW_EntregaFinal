@@ -93,6 +93,10 @@ header div.mainMenu nav ul li a{
 }
 
 
+/* clases de Bootstrap*/
+header nav.bg-propio-topbar{
+    background-color: rgb(78, 44, 44);
+}
 
 /**INDEX.HTML**/
 
