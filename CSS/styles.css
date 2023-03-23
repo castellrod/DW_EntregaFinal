@@ -215,6 +215,11 @@ footer {
     /*z-index: 9;*/
     width: 100%;
     display: inline-flex;
+    color:white;
+}
+
+footer p{
+    color: white;
 }
 
 footer nav.menuFooter{
