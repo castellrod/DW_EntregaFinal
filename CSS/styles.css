@@ -94,7 +94,7 @@ header div.mainMenu nav ul li a{
 
 
 /* clases de Bootstrap*/
-header nav.bg-propio-topbar{
+body nav.bg-propio-topbar{
     background-color: rgb(78, 44, 44);
 }
 
