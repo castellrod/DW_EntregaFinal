@@ -4,120 +4,283 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios y Productos</title>
+    <title>Proyectos</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
 </head>
+
+
 <body>
+<!-- *********************** MAIN MENU *********************** --> 
+            <!-- **** MAIN MENU BS **** -->
+            <nav class="navbar navbar-expand-lg fixed-top sticky-top bg-propio-topbar" data-bs-theme="dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="./Img/logo.png" alt="Logo"  class="d-inline-block align-text-top">
+                  <a class="navbar-brand" href="#">DonDron</a>
+                </a>
+            
+          
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="./ServiciosProdctos.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link  active bg-dark" aria-current="page" href="./proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./nosotros.html">Contacto</a>
+                    </li>
+                    
+                     
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      <!-- **** MAIN MENU BS **** -->
     
     <header>
-        <div class="topHeader">
-            <div class="logo"><a href="./index.html"><img src="./Img/logo.png" alt=""></a></div>
-            <div class="topMenu">
-                <nav>
-                <ul>
-                    <li><a href="https://www.dji.com/">DJI</a></li>
-                    <li><a href="https://www.dgac.gob.gt/">DGAC</a></li>
-                    <li><a href="https://www.accuweather.com/es/world-weather">Clima</a></li>
-                </ul></nav>
-            </div>
-            <div class="idiomaBox">Español</div>
-        </div>
 
-        <div class="bannerPrinci">
-            <img src="./Img/bannerprincipal.png" alt="Banner Principal">
-            <!-- <a href=""><h1>Don Dron</h1></a> -->
-        </div>
+ 
 
-        <div class="mainMenu">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./ServiciosProdctos.html">Servicio / Productos</a> </li>
-                    <li><a href="./nosotros.html">Nosotros</a> </li>
-                    <li><a href="./proyectos.html">Proyectos</a> </li>
-                    <li><a href="./cotizacion.html">Cotizaciones</a> </li>
+<!-- *********************** CARRUSEL *********************** --> 
+
+<!-- **** CARRUSEL BS **** -->
+
+        <div class="container-fluid p-0">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Img/bannerprincipal.png" class="d-block w-100" alt="Banner Dron 1">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!-- <h5>DonDron</h5> -->
+                      <p>Servicio de Drones.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Img/bannerprincipal.png" class="d-block w-100" alt="Banner Dron 2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!-- <h5>DonDron</h5> -->
+                      <p>Fotografía y Video.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Img/bannerprincipal.png" class="d-block w-100" alt="Banner Dron 3">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!-- <h5>DonDron</h5> -->
+                      <p>Fotogrametría.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+          
+        
+
+        <!-- **** CARRUSEL BS **** -->
+
+
+        <!-- *********************** MENU 2 *********************** --> 
+
+ <!-- **** MENU 2  BS **** -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <!--<a class="navbar-brand" href="#">Hidden brand</a>-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="https://www.dgac.gob.gt/">DGAC</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="https://www.accuweather.com/es/world-weather">Clima</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marcas
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.dji.com/">DJI</a></li>
+                    <li><a class="dropdown-item" href="https://www.dji.com/">Parrot</a></li>
+                    <li><a class="dropdown-item" href="https://www.dji.com/">Quetzal</a></li>
+                    <li><hr class="dropdown-divider"></li>
                 </ul>
-            </nav>
             
+                <!--<form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>-->
+            </div>
         </div>
+        </nav>
+ <!-- **** MAIN MENU BS **** -->
+
     </header>
 
+    <!-- *********************** SECCION CUERPO PROYECTOS  *********************** -->
     <section id="proyCueshpo">
-        <div><h1>Proyectos</h1></div>
-        <div id="PRY">
-            <div id="pryL">
-                <div class="imaLeft">
-                    <img src="./Img/Pry.png" alt="">
-                </div>
-                <div class="txtRight">
-                    <h2>PROYECTO 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eos aut libero debitis dolorum doloribus? Inventore accusantium neque corrupti assumenda atque, praesentium quo minima maxime aliquid veritatis ullam officia totam!</p>
-                </div>
-            </div>
-            <div id="pryL">
-                <div class="imaLeft">
-                    <img src="./Img/Pry.png" alt="">
-                </div>
-                <div class="txtRight">
-                    <h2>PROYECTO 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorem quaerat delectus fuga eveniet, facere beatae vero? Deleniti rerum laborum error, quas asperiores accusantium blanditiis maxime, exercitationem repellendus, rem enim.</p>
-                </div>
-                
-                
-            </div>
+        
 
-            <div id="pryL">
-                <div class="imaLeft">
-                    <img src="./Img/Pry.png" alt="">
-                </div>
-                <div class="txtRight">
-                    <h2>PROYECTO 3</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis mollitia, doloremque obcaecati iusto nihil praesentium animi harum eaque, tempore odit ab dolor autem expedita nulla, quidem necessitatibus magni laboriosam.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis est quisquam sapiente doloremque libero iste quasi. Eum modi eius eos! Harum non repellat ipsum qui sapiente tempore, voluptas tempora! Dignissimos.
-                    </p>
-                </div>
+
+        <!-- *********************** PROYECTOS  *********************** -->
+
+
+        <div class="container text-center my-5">
+
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-dark">Algunos de nuestros proyectos</h1>
             </div>
-            <div id="pryL">
-                <div class="imaLeft">
-                    <img src="./Img/Pry.png" alt="">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4 mx-5 my-5">
+            
+          
+                <div class="col">
+                <div class="card">
+                    <a href="./proyectos.html"><img src="./Img/Pry.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Proyecto A</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ea rem dolores earum enim magni. Aliquid mollitia cum tenetur, quidem debitis id!</p>
+                    </div>
                 </div>
-                <div class="txtRight">
-                    <h2>PROYECTO 4</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dicta ipsum sapiente debitis blanditiis distinctio voluptas exercitationem aliquid ullam necessitatibus, laboriosam corporis magnam possimus quod et, laborum quia, saepe ut!</p>
                 </div>
-                
-                
+                <div class="col">
+                <div class="card">
+                    <a href="./proyectos.html"><img src="./Img/Pry.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Proyecto B</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga aliquid voluptate at similique!.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <a href="./proyectos.html"><img src="./Img/Pry.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Proyecto C</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ipsum?.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <a href="./proyectos.html"><img src="./Img/Pry.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                    <h5 class="card-title">Proyecto D</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laboriosam repellendus perspiciatis aperiam quidem asperiores dolorum..</p>
+                    </div>
+                </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="card">
+                        <a href="./proyectos.html"><img src="./Img/Pry.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Proyecto A</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ea rem dolores earum enim magni. Aliquid mollitia cum tenetur, quidem debitis id!</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <a href="./proyectos.html"><img src="./Img/Pry.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Proyecto B</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga aliquid voluptate at similique!.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <a href="./proyectos.html"><img src="./Img/Pry.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Proyecto C</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ipsum?.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <a href="./proyectos.html"><img src="./Img/Pry.png" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Proyecto D</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laboriosam repellendus perspiciatis aperiam quidem asperiores dolorum..</p>
+                        </div>
+                    </div>
+                    </div>
+
+
+
             </div>
         </div>
+
+
 
         
     </section>
 
-    <footer>
-        <nav class="menuFooter">
-            <ul>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./ServiciosProdctos.html">Nuestros Servicios</a></li>
-                <li><a href="./ServiciosProdctos.html">Nuestros Productos</a></li>
-            </ul>
-            
-        </nav>
-        <nav class="menuFooter">
-            <ul>
-                <li><a href="./cotizacion.html">Cotización</a></li>
-                <li><a href="./nosotros.html">Contacto</a></li>
-            </ul>
-            
-        </nav>
-        <div class="logoFooter">
-            <a href="./index"><img src="./Img/logo2.png" alt=""></a>
-        </div>
-    </footer> 
+<!-- *********************** FOOTER  *********************** -->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-0 my-0 border-top text-light">
+        <p class="col-md-4 mb-0 text-light">&copy; 2023 DonDron</p>
+
+        <a href="./index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="./Img/logo2.png" alt="">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end text-light">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-light">Home</a></li>
+        <li class="nav-item"><a href="./ServiciosProdctos.html" class="nav-link px-2 text-light">Servicios</a></li>
+        <li class="nav-item"><a href="./nosotros.html" class="nav-link px-2 text-light">Nosotros</a></li>
+        <li class="nav-item"><a href="./proyectos.html" class="nav-link px-2 text-light">Proyectos</a></li>
+        <li class="nav-item"><a href="./cotizacion.html" class="nav-link px-2 text-light">Contacto</a></li>
+        </ul>
+    </footer>
 
 
-</body>
+
+<!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    </body>
 </html>
