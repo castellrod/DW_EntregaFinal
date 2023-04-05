@@ -172,22 +172,23 @@ section div#SP div#spR {
     padding-left: 20px;
     padding-top: 20px;
     margin: 20px 0 20px 10%;
-        
-    }
-    
-    section div#SP div#spR div.imaRight{
+
+    div.imaRight{
         /*background-color: blue;*/
         float: left;
         padding: 10px 20px;
         width: 15.3%; 
     }
+    div.txtLeft{
+        /* background-color: blue;*/
+         /*float: left;*/
+         padding: 10px 20px;
+         width: 65.3%; 
+     }
+        
+}
     
-    section div#SP div#spR div.txtLeft{
-       /* background-color: blue;*/
-        /*float: left;*/
-        padding: 10px 20px;
-        width: 65.3%; 
-    }
+    
 
 
     /******/
@@ -196,15 +197,16 @@ section div.qSomos{
    /* background-color: lightgrey;*/
     text-align: center;
     padding: 50px 10% 55px 10%;
-}
 
-section div.qSomos p{
-    padding-top: 20px;
-    text-align: center;
-}
-section div.qSomos div.logoQsomos{
-    text-align: center;
-    padding: 10px 10px 10px 10px;
+    p{
+        padding-top: 20px;
+        text-align: center;
+    }
+    div.logoQsomos{
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+    }
+
 }
 
 section div.mapaQsomos{
@@ -222,16 +224,18 @@ section div.cotizProdServ{
     /*background-color: lightgrey;*/
     text-align: center;
     padding: 50px 0 55px 0;
+
+    form{
+        padding-top: 20px;
+        text-align: center;
+
+        #boton{
+            background-color: orangered;
+            border-color: rgb(8, 8, 8);
+            border-radius: 20%;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+        }
+    }
 }
 
-section div.cotizProdServ form{
-    padding-top: 20px;
-    text-align: center;
-}
-section div.cotizProdServ form #boton{
-    background-color: orangered;
-    border-color: rgb(8, 8, 8);
-    border-radius: 20%;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-}
