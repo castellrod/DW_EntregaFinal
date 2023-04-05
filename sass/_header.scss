@@ -1,0 +1,103 @@
+
+
+/*****HEADER*****/
+header{
+
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    div.topHeader{
+        background-color: rgb(78, 44, 44);
+        padding: 0px;
+        /*position:fixed;*/
+        top: 0px;
+        /*z-index: 9;*/
+        width: 100%;
+        display: inline-flex;
+
+        div.topMenu{
+            width: 80%;
+            nav ul li{
+                display: inline;
+                margin: 0 20px;
+                /*background-color: black;*/
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        &.logo{
+            padding: 10px;
+            position: relative;
+            width: 20%;
+        
+        }
+
+    }
+
+    div.bannerPrinci{
+        background-color: rgb(16, 16, 163);
+        color: slategray;
+        width:auto;
+        overflow: hidden;
+
+        a{
+            color: darkslategrey;
+        }  
+    }
+    
+        
+    div.mainMenu{
+        /*margin: 20px 20px;*/
+        padding: 20px 0 20px 0;
+        background-color: gray;
+        margin: 0px auto;
+        box-sizing: border-box;
+        position: sticky;
+        z-index: 9;
+        width: 100%;
+
+        nav ul li{
+            display: inline;
+            padding: 0 20px;
+            /*position:relative;*/
+            /*background-color: black;*/
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        
+    }
+    
+    
+   
+   
+
+}
+
+nav{
+    &.bg-propio-topbar{
+    background-color: rgb(192, 10, 10);
+
+        div a {
+            img.logo{
+                border:rgb(8, 8, 8) 2px solid;
+                
+            }
+            a.nombre{
+                background-color: blue;
+                border:rgb(8, 8, 8) 2px solid;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+/*********/

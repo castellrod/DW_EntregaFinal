@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a:hover {
+    color: tomato;
+}
+
+
+/*****partials*****/
+
+@import "vars";
+@import "header";
+@import "media";
+@import "footer";
+
+
+/**INDEX.HTML**/
+
+/**INDEX**SECTION** Servicios y productos*/
+section div.serviProd{
+    margin:30px 0 50px 0;
+    h2{
+        text-align: center;
+    }
+
+    div.servIma{
+        /* background-color: black;*/
+         width: 90%;
+         margin: 10px 5%;
+         /*display: block;*/
+         padding: 0 auto;
+         overflow: hidden;
+         
+    }
+
+    div.servIma div.item {
+        /*background-color: blueviolet;*/
+        float: left;
+        padding: 10px 20px;
+        width: 33.3%;
+    }
+}
+
+
+
+
+
+/**INDEX**SECTION** Coti*/
+section div.call2Coti{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 50px 0 55px 0;
+
+    p{
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    button{
+        background-color: orangered;
+        border-color: rgb(8, 8, 8);
+        border-radius: 20%;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+
+
+
+/**INDEX**SECTION** ALGUNOS TRABAJOS*/
+section div.proy{
+    margin:30px 0 50px 0;
+
+    h2{
+        text-align: center;
+    }
+
+    div.proyIma{
+        /* background-color: black;*/
+         width: 90%;
+         margin: 10px 5%;
+         /*display: block;*/
+         padding: 0 auto;
+         overflow: hidden;
+         
+    }
+
+    div.proyIma div.item {
+        /* background-color: blueviolet;*/
+         float: left;
+         padding: 10px 20px;
+         width: 25%;
+    }
+}
+
+
+
+
+/**INDEX**SECTION** CONTACTO*/
+section div.contacto{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 50px 0 55px 0;
+
+    form{
+        padding-top: 20px;
+        text-align: center;
+
+        #boton{
+            background-color: orangered;
+            border-color: rgb(8, 8, 8);
+            border-radius: 20%;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+        }
+    }
+
+
+}
+
+
+
+
+
+/***************/
+/**SERVICIOSPRODUCTOS***/  /**PROYECTOS***/
+
+/***SECTION CUESHPO***/
+
+/*section div#SP{
+background-color: black;
+
+}*/
+
+/*SERVICIOS Y PRODUCTOS foto izquierda. Y PROYECTOS*/
+section div#SP div#spL,
+section div#PRY div#pryL{
+/*background-color: rgb(179, 179, 180);*/
+display: inline-flex;
+width: 80%;
+padding-left: 20px;
+padding-top: 20px;
+margin: 20px 0 20px 10%;
+}
+
+section div#SP div#spL div.imaLeft,
+section div#PRY div#pryL div.imaLeft{
+    background-color: rgb(151, 144, 144);
+    float: left;
+    padding: 10px 20px;
+    width: 25.3%; 
+}
+
+section div#SP div#spL div.txtRight,
+section div#PRY div#pryL div.txtRight{
+    background-color: rgb(151, 144, 144);
+    /*float: left;*/
+    padding: 10px 20px;
+    width: 63.3%; 
+}
+
+/**Servicios foto derecha */
+section div#SP div#spR {
+    /*background-color: blue;*/
+    display: inline-flex;
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 20px 0 20px 10%;
+        
+    }
+    
+    section div#SP div#spR div.imaRight{
+        /*background-color: blue;*/
+        float: left;
+        padding: 10px 20px;
+        width: 15.3%; 
+    }
+    
+    section div#SP div#spR div.txtLeft{
+       /* background-color: blue;*/
+        /*float: left;*/
+        padding: 10px 20px;
+        width: 65.3%; 
+    }
+
+
+    /******/
+    /**NOSOTROS**SECTION** QSOMOS*/
+section div.qSomos{
+   /* background-color: lightgrey;*/
+    text-align: center;
+    padding: 50px 10% 55px 10%;
+}
+
+section div.qSomos p{
+    padding-top: 20px;
+    text-align: center;
+}
+section div.qSomos div.logoQsomos{
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+section div.mapaQsomos{
+    padding: 20px 0 30px 0;
+    text-align: center;
+}
+
+
+/***********/
+/***********/
+/*COTIZACION*/
+
+/**INDEX**SECTION** COTI*/
+section div.cotizProdServ{
+    /*background-color: lightgrey;*/
+    text-align: center;
+    padding: 50px 0 55px 0;
+}
+
+section div.cotizProdServ form{
+    padding-top: 20px;
+    text-align: center;
+}
+section div.cotizProdServ form #boton{
+    background-color: orangered;
+    border-color: rgb(8, 8, 8);
+    border-radius: 20%;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}

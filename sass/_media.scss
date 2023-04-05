@@ -1,0 +1,30 @@
+
+
+
+
+@media (max-width: $desktop){
+    header{
+
+        div{
+            &#carouselExampleCaptions{
+                /* div.carousel-inner{ */
+                    display: none;
+                /* } */
+            }
+
+        }
+    }
+}
+@media (min-width: $desktop){
+    header{
+
+        div{
+            &#conSinCarrusel{
+               /*  div.carousel-inner{ */
+                    display: none;
+                /* } */
+            }
+
+        }
+    }
+}
