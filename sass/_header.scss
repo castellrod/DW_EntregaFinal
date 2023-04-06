@@ -94,8 +94,9 @@ nav{
                 border:rgb(8, 8, 8) 2px solid;
             }
         }
-        div a.navbar-brand:hover img{-webkit-transform:scale(1.3);transform:scale(1.3);}
+        div a.navbar-brand:hover img{-webkit-transform:scale(1.3);transform:scale(1.3); transition: 0.5s all;}
         img.logo {overflow:hidden;}
+       
     }
 
 }

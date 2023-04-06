@@ -84,20 +84,21 @@ nav.bg-propio-topbar div a a.nombre .navbar-brand {
 }
 nav.bg-propio-topbar div a.navbar-brand:hover img {
   transform: scale(1.3);
+  transition: 0.5s all;
 }
 nav.bg-propio-topbar img.logo {
   overflow: hidden;
 }
 
 /*********/
-@media (max-width: 992px) {
+@media (max-width: 650px) {
   header div#carouselExampleCaptions {
     /* div.carousel-inner{ */
     display: none;
     /* } */
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 650px) {
   header div#conSinCarrusel {
     /*  div.carousel-inner{ */
     display: none;
@@ -216,6 +217,43 @@ section div.serviProd div.servIma div.item {
   width: 33.3%;
 }
 
+div.servclass:hover {
+  /*div a.navbar-brand:hover img{-webkit-transform:scale(1.3);transform:scale(1.3);}
+      img.logo {overflow:hidden;}*/
+  transform: scale(1.05);
+  transition: 0.5s all;
+}
+
+/*****animaciones****/
+.anima {
+  background-color: deepskyblue;
+  padding: 100px 0 10% 0;
+  min-height: 40vh;
+  overflow: hidden;
+}
+
+@keyframes miEfectoBch {
+  0% {
+    transform: translate(-10vw, 10vh); /* X,Y */
+  }
+  25% {
+    transform: translate(18vw, 2vh);
+  }
+  50% {
+    transform: translate(38vw, 20vh);
+  }
+  75% {
+    transform: translate(60vw, 15vh);
+  }
+  100% {
+    transform: translate(100vw, 5vh);
+  }
+}
+.animaBichito {
+  animation: miEfectoBch 5s linear 0s infinite normal;
+}
+
+/******************/
 /**INDEX**SECTION** Coti*/
 section div.call2Coti {
   background-color: lightgrey;
